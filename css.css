@@ -48,8 +48,7 @@ ul {
 }
 
 .btn-primary:hover,
-.btn-secondary:hover,
-.btn-third {
+.btn-secondary:hover{
   background: #e4b95b;
 }
 
@@ -134,20 +133,24 @@ header * {
   align-items: center;
 }
 #about .title,
-#offers .title{
+#offers .title,
+#menu .title{
   text-align: center;
   margin-bottom: 4rem;
 }
 #about h2,
-#offers h2{
+#offers h2,
+#menu h2 {
   font-size: 40px;
   margin-bottom: 20px;
 }
-#about h2 {
+#about h2,
+#menu h2{
   color: #383848;
 
 }
-#about .title p{
+#about .title p,
+#menu .title p {
   font-size: 14px;
   color: #9a9a9a;
   font-weight: 600;
@@ -207,3 +210,83 @@ header * {
   margin-left: 5px;
 }
 /* Offers End */
+/* Menu Start */
+#menu {
+  background: #f4f2ed;
+  padding: 5rem 0;
+}
+
+#menu .title h2 {
+  color: #383848;
+}
+#menu .title p {
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+#menu .menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .menu-items .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+#menu .menu-items .menu-item img {
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+#menu .menu-items .menu-item h3 {
+  color: #383848;
+  border-bottom: 1px dashed #c2bdbd;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#menu .menu-items .menu-item span {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+#menu .menu-items .menu-item p{
+  margin-top: 10px;
+}
+#menu .btn{
+  display: block;
+  margin: 20px auto 0;
+  background: #e4b95b;
+  color: #fff;
+  cursor: pointer;
+}
+#menu .btn:hover{
+  background: #383848;
+}
+/* Menu End */
+/* Daytime Start */
+#daytime {
+  background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+}
+#daytime .daytime-items{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+}
+#daytime .daytime-items h3{
+  font-size: 32px;
+  margin: 20px 0 10px;
+
+}
+#daytime .daytime-items p{
+  font-weight: 500;
+}
+/* Daytime End */
